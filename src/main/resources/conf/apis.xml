@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apis xmlns="http://www.leapframework.org/schema/webapi">
+    <api name="console" base-path="/console">
+        
+    </api>
+</apis>

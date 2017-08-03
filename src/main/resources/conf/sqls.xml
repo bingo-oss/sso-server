@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls xmlns="http://www.leapframework.org/schema/sqls">
+    <!--
+        admin: $2a$10$NV0il8rEkWlMbWhgib98a.HL1wU6AfVTYVM0UBp5rTzJeFaqi3qOq
+        111111:$2a$10$upfY1gHdjUzTmbMGZgMHXOxFPPZihuEGd.bZFPyHmV6qrXpzxvjke
+    -->
+    <command key="security.findUserDetailsById" override="true">
+        select id,password,first_name,last_name,login_name from sec_user where id = :userId
+    </command>
+
+    <command key="security.findUserDetailsByLoginName" override="true">
+        select id,password,first_name,last_name,login_name from sec_user where login_name = :loginName
+    </command>
+</sqls>

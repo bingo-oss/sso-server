@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <title>单点登录首页</title>
+</head>
+<body>
+    你好！${request.user.name}，欢迎登录系统。
+    <br/>
+    <a href="/oauth2/logout?post_logout_redirect_uri=@{/}">注销</a>
+</body>
+</html>

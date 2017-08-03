@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.leapframework.org/schema/beans">
+    <!-- 扩展leap本身功能的bean -->
+    
+    <bean type="leap.web.AppListener" class="net.bingosoft.oss.ssoserver.SwaggerProcessorListener" sort-order="200"/>
+</beans>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.leapframework.org/schema/beans">
+    <!-- 所有重写leap的bean都在这个配置文件下配置 -->
+    <remove-bean class="leap.oauth2.webapp.DefaultOAuth2Config" type="leap.web.AppListener"/>
+    <bean type="leap.oauth2.webapp.OAuth2Config"
+          class="net.bingosoft.oss.ssoserver.override.leap.oauth2.webapp.DefaultOAuth2Config"
+          primary="true" override="true">
+        <additional-type-def type="leap.oauth2.webapp.OAuth2Configurator" primary="true" override="true"/>
+        <additional-type-def type="leap.web.AppListener"/>
+    </bean>
+    
+    <bean type="leap.oauth2.webapp.token.TokenInfoLookup"
+          class="net.bingosoft.oss.ssoserver.override.leap.oauth2.webapp.token.DefaultTokenInfoLookup"
+          primary="true" override="true"/>
+</beans>
