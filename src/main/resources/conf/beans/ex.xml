@@ -3,4 +3,7 @@
     <!-- 扩展leap本身功能的bean -->
     
     <bean type="leap.web.AppListener" class="net.bingosoft.oss.ssoserver.SwaggerProcessorListener" sort-order="200"/>
+    
+    <!-- ldap校验器 -->
+    <bean type="leap.web.security.authc.credentials.CredentialsAuthenticator" class="net.bingosoft.oss.ssoserver.login.LdapCredentialsAuthenticator" sort-order="50"/>
 </beans>

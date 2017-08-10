@@ -15,4 +15,8 @@
         <property name="db.minIdle">5</property>
     </properties>
     
+    <properties prefix="ldap">
+        <property name="url">LDAP://ldap.forumsys.com:389</property>
+    </properties>
+    
 </config>

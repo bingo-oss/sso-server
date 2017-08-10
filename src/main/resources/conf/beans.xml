@@ -9,4 +9,6 @@
         <property name="maxWait" 		 value="${db.maxWait}"/>
         <property name="minIdle" 		 value="${db.minIdle}"/>
     </bean>
+    
+    <bean class="net.bingosoft.oss.ssoserver.SSOConfig" primary="true"/>
 </beans>
